@@ -2,7 +2,7 @@
 /**
  * main - This is used to help out put the strings
  * puts - this is a function used to output a string
- * return (0): this return a value of 0 to the function main
+ * Return: 0 is to the function main
  */
 int main(void)
 	{
