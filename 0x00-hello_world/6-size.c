@@ -4,7 +4,7 @@
  * printf - this is a function used to output a string
  * Return: 0 is to the function main
  */
-int main()
+int main(void)
 
 
 	{
