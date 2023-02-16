@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o intel_syntax.s
+gcc -S intel_syntax.c -o intel_syntax.s
