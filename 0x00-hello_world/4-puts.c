@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * function_main - This is used to help out put the strings
+ * main - This is used to help out put the strings
  * puts - this is a function used to output a string
  * return (0): this return a value of 0 to the function main
  */
