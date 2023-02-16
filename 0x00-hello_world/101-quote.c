@@ -3,7 +3,6 @@
 
 /**
  * main: this is used to print using write function
- * write: this is a function used to print the output
  * Return: 1 is returned after the function is executed
  */
 
