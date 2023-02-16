@@ -2,10 +2,11 @@
 #include <unistd.h>
 
 /**
- *main: this is used to print using putchar
- *write: this is a function used to print the output
- *Description: the write outputs using the begining and the end numbers
- *Return: 1 is returned after the function is executed
+ * main: this is used to print using write function
+ * write: this is a function used to print the output
+ *
+ * Description: the write outputs using the begining and the end numbers
+ * Return: 1 is returned after the function is executed
  */
 
 int main(void)
