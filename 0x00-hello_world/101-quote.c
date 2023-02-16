@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * main: this is used to print using write function
- * Return: 1 is returned after the function is executed
+ * main - main block
+ * Return: 1 
  */
 
 int main(void)
