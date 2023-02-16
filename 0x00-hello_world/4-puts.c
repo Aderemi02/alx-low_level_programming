@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc 4-main.c
+gcc outputting_puts.c
