@@ -13,10 +13,9 @@ int main(void)
 			putchar('0' + c);
 	}
 	{
-		for (c= 49; c <= 54; ++c)
+		for (c = 49; c <= 54; ++c)
 			putchar('0' + c);
 		printf("\n");
 	}
 return (0);
 }
-
