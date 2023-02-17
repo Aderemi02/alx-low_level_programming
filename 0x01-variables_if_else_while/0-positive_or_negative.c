@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ *main - this run the function
+ *
+ *Return - 0 is returned
+ */
 int main(void)
 {
 	int n;
