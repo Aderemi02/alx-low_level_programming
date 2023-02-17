@@ -13,7 +13,7 @@ int main(void)
                         putchar('0' + c);
 	}
 	{
-		for (c=48; c <= 53`; ++c)
+		for (c=48; c <= 53; ++c)
 			putchar('0' + c);
                 printf("\n");
         }
