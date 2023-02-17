@@ -9,8 +9,12 @@ int main(void)
 {
 	int c = 0;
         {
-                for (c = 0; c <= 15; ++c)
+                for (c = 0; c <= 9; ++c)
                         putchar('0' + c);
+	}
+	{
+		for (c=65; c <= 70; ++c)
+			putchar('0' + c);
                 printf("\n");
         }
 return (0);
