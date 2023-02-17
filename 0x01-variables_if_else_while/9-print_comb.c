@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main -main block
- * Description: to print number combination
- * Return: 0 when successful
+ *main - entry point
+ *Return: return 0
  */
-
 int main(void)
 {
-	int c = 0;
-	
-	for (c = 0; c <= 9; ++c)
+	int i;
+
+	for (i = 0; i < 10; i++)
 	{
-		putchar('0' + c);
-		if (c < 9)
+		putchar(i + '0');
+		if (i < 9)
 		{
 			putchar(',');
 			putchar(' ');
