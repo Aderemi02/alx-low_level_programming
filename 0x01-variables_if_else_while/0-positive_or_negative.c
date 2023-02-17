@@ -4,7 +4,7 @@
 /**
  *main - this run the function
  *
- *Return - 0 is returned
+ *Return - 0 value
  */
 int main(void)
 {
