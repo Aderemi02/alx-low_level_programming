@@ -7,20 +7,17 @@
 
 int print_sign(int n)
 {
-	int c = +1;
-	int b = -1;
-	int a = 0;
 	if (n > 0)
 	{
-	putchar('c');
+	putchar('+');
 	return (1);
 	}
 	else if (n < 0)
 	{
-	putchar('b');
+	putchar('-');
 	return (-1);
 	}
 	else
-	putchar('a');
+	putchar('0');
 	return(0);
 }
