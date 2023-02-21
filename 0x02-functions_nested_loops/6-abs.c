@@ -6,6 +6,6 @@
  */
 int _abs(int a)
 {
-	abs(a);
+	int a = abs(a);
 	return (0);
 }
