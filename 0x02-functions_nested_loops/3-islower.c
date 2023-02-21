@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- *
+ *_islower - used to identify lowercase
  */
 
 int _islower(int c)
