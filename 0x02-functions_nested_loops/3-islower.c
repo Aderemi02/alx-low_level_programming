@@ -7,10 +7,10 @@
 
 int _islower(int c)
 {
-	int c;
+	int r;
 	char d[] ="abcdefghijklmnopqrstuvwxyz"
-	c = islower(d[])
-	putchar('0' + c);
+	r = islower(d[]);
+	putchar('0' + r);
 	putchar('\n');
 	return 1;
 }
