@@ -4,8 +4,7 @@
 /**
  * _islower - used to identify lowercase
  * islower(c) - accepts the value of c to check if its lowercase
- * c - integral type.
- * @c - character to be checked
+ * @c - integer to check
  * Return: 1 if character is lowercase, otherwise 0.
  */
 
