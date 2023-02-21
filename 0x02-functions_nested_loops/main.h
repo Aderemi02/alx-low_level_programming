@@ -1,1 +1,1 @@
-int main( char *)
+void print_alphabet(void);
