@@ -1,12 +1,17 @@
 #include <ctype.h>
+#include <stdio.h>
 /**
- *
  *
  */
 
 int _islower(int c)
 {
-	int r;
-	r = islower(c);
-	return 1;
+	if (islower(c))
+	{
+		return (1);
+	}
+	else
+	{
+	return (0);
+	}
 }
