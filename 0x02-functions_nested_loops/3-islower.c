@@ -3,7 +3,8 @@
 #include <unistd.h>
 /**
  * _islower - used to identify lowercase
- * c: used for accepting the value
+ * int c - used for accepting the value
+ * _islower(c) - accepts the value of c to check if its lowercase
  * return: 1 if lowercase.
  */
 
