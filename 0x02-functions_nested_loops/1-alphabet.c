@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - check the code
+ * print_alphabet - check the code
  *
- * Return: Always 0.
+ * Return: void retuens no value.
  */
 
 void print_alphabet(void)
 {
 	char c = 'a';
-	for (c = 'a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++) 
 	{
 		putchar(c);
 	}
