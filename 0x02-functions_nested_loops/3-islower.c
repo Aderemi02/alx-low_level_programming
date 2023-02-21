@@ -4,6 +4,7 @@
 /**
  * _islower - used to identify lowercase
  * _islower(c) - accepts the value of c to check if its lowercase
+ * int c - parameter to be parsed.
  * @c - the character to be checked
  * Return: 1 if character is lowercase, otherwise 0.
  */
