@@ -4,8 +4,8 @@
  * _abs - absolute value
  * Return: 0 is returned.
  */
-int _abs(int)
+int _abs(int a)
 {
-	abs();
+	abs(a);
 	return (0);
 }
