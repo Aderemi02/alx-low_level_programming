@@ -1,18 +1,18 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 /**
- * _isalpha - to check for upper and lower case alphabet
- * Return: 1 if true otherwise 0.
+ *isalpha - writes the parameter c to stdout
+ *@c. functio returns output of type int
+ *
+ *Return - returns 1 if c is a letter otherwise 0
  */
-
 int _isalpha(int c)
 {
-	if (isalpha(c))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
