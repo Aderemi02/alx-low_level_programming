@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  *_isalpha - writes the parameter c to stdout
- *@c - function returns output of type int
- *
- *Return - returns 1 if c is a letter otherwise 0
+ * @c: is the char to be checked
+ * Return: 1 if char is lowercase or uppercase, otherwise 0.
  */
 int _isalpha(int c)
 {
