@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *isalpha - writes the parameter c to stdout
- *@c. functio returns output of type int
+ *_isalpha - writes the parameter c to stdout
+ *@c - function returns output of type int
  *
  *Return - returns 1 if c is a letter otherwise 0
  */
