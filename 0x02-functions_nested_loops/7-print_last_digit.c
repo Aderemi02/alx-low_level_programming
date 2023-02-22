@@ -4,7 +4,7 @@
  *
  */
 
-int print_last_digit(int digit)
+int print_last_digit(int a)
 {
 	int a;
 	int digit;
@@ -12,5 +12,5 @@ int print_last_digit(int digit)
 	{
 		putchar(a);
 	}
-	r`eturn (a);
+	return (a);
 }
