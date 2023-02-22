@@ -1,51 +1,26 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
- * main - check the code.
+ * main - check the code
  *
  * Return: Always 0.
  */
-
-int print_sign(int n)
+int print_last_digit(int a)
 {
-	if (n > 0)
+	int b = a % 10;
 	{
-	putchar('+');
-	return (1);
+		putchar(b);
 	}
-	else if (n < 0)
-	{
-	putchar('-');
-	return (-1);
-	}
-	else
-	putchar('0');
-	return(0);
+	return (b);
 }
 int main(void)
 {
     int r;
 
-    r = print_sign(98);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(0);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(0xff);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(-1);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
+    print_last_digit(98);
+    print_last_digit(0);
+    r = print_last_digit(-1024);
+    putchar('0' + r);
     putchar('\n');
     return (0);
 }
