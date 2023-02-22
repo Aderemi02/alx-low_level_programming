@@ -6,10 +6,9 @@
 
 int print_last_digit(int a)
 {
-	int digit;
-	a = digit % 10;
+	int b = a % 10;
 	{
-		putchar(a);
+		putchar(b);
 	}
-	return (a);
+	return (b);
 }
