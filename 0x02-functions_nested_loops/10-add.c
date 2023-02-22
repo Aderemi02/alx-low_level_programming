@@ -4,7 +4,7 @@
  *
  */
 
-int add(int, int)
+int add(int first_int, int second_int)
 {
 	int first_int;
 	int second_int;
