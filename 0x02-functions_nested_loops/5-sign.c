@@ -1,24 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * print_sign - find the signed value
- *Return: 1 if positive, -1 if negative and 0 otherwise
+ * print_sign - check if int n is greater than or less than 0
+ * @n: is the int to be checked
+ * Return: 1 if n is greater than 0, -1 if n is less than 0, otherwise 0.
  */
-
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-	putchar('+');
-	return (1);
+		_putchar('+');
+		return (1);
 	}
 	else if (n < 0)
 	{
-	putchar('-');
-	return (-1);
+		_putchar('-');
+		return (-1);
 	}
 	else
 	{
-	putchar('0');
-	return(0);
+		_putchar('0');
+		return (0);
 	}
-}
+} 
