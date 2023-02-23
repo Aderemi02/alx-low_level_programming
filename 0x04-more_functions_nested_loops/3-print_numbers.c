@@ -3,7 +3,7 @@
  * print_numbers - prints numbers from 0-9
  * void: no parameter specified
  * @i - the int to print
- * Return: doesnt return a value 
+ * Return: doesnt return a value
  */
 
 void print_numbers(void)
