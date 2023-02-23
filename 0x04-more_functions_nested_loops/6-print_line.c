@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - prints a straight line
- * @n - prints the number of line parsed
+ * @n: - prints the number of line parsed
  * Return: doesnt return any value
  */
 void print_line(int n)
