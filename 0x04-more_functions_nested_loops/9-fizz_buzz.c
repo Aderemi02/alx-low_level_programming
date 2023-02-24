@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - writes the FizzBuzz
+ *
  * Return: always 0 when true.
  */
 
