@@ -7,17 +7,18 @@
  */
 
 int main(void)
-{
-	long int a = 612852475143, i;
 
-	for (i = 2; i < a; i++)
+{
+	long a, i;
+
+	a = 612852475143;
+	for (i = 2; i < n; i++)
 	{
-		while ((a % i) == 0)
+		while (a % i == 0)
 			a = a / i;
 	}
-	printf("%ld is the largest prime factor \n", a);
+
+	printf("%lu\n", n);
 
 	return (0);
 }
-
-
