@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - writes the FizzBuzz
- * Return: 0 when true.
+ * Return: always 0 when true.
  */
+
 int main(void)
 {
 	int a;
@@ -32,6 +33,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
