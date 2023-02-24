@@ -14,7 +14,7 @@ int main(void)
 	{
 	if ((a % 15) == 0)
 	{
-		printf("FizzBuz");
+		printf("FizzBuzz");
 	}
 	else
 	{
