@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - finds the prime factor
- *Return: 0 when true
+ * main - Entry point.
+ *
+ * Return: Always 0.
  */
 
 int main(void)
