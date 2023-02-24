@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- * main - writes the FizzBuzz
+ * main - write the FizzBuzz
  *
- * Return: always 0 when true.
+ * Return: always 0.
  */
 
 int main(void)
+
 {
 	int a;
 
