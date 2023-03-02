@@ -4,7 +4,8 @@
  * _strcmp - compare two strings
  * @s1: the first string
  * @s2: the second string
- * Return: returns the value of i
+ *
+ * Return: returns the value of i.
  */
 
 int _strcmp(char *s1, char *s2)
