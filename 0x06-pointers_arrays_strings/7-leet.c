@@ -7,11 +7,11 @@
  */
 
 char *leet(char *str)
-	{
+{
 	int i, j;
 	char p[] = "aAeEoOtTlL";
 	char q[] = "4433007711";
-
+	
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
@@ -23,4 +23,4 @@ char *leet(char *str)
 		}
 	}
 	return (str);
-	}
+}
