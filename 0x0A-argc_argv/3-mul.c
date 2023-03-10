@@ -4,14 +4,14 @@
  * main - multiply argument
  * @argc: count of argument
  * @argv: pointer array to each count
- *Return: 0 if success
+ *Return: 1 if success
  */
 
 int main(int argc, char *argv[])
 {
 	int mul = 1, i;
 
-	if (argc < 1)
+	if (argc < 2)
 	{
 		printf("Error\n");
 	}
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 		mul = mul * atoi(argv[i]);
 	}
 		printf("%d\n", mul);
-	return (0);
+	return (1);
 }
