@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
- /**
+/**
  * main - multiply argument
  * @argc: count of argument
  * @argv: pointer array to each count
- *Return: 1 if success
+ * Return: 1 if success
  */
 
 int main(int argc, char *argv[])
