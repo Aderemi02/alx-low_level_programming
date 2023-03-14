@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (p == NULL)
 	{
-		return (0);
+		p = "";
 	}
 
 	for (l = 0; l < i; l++)
