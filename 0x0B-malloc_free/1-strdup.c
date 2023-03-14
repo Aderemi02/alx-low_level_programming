@@ -23,7 +23,12 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	p = malloc(sizeof(*p) * i);
+	p = malloc(sizeof(*p) * i + 1);
+
+	if (p == NULL)
+	{
+		return (0);
+	}
 
 	j = 0;
 
@@ -34,8 +39,4 @@ char *_strdup(char *str)
 	}
 	return (p);
 	free(p);
-
-	return (0);
 }
-
-
