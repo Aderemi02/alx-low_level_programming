@@ -16,7 +16,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (0);
 	}
-	p = malloc(sizeof(*p) * size);
+	else
+	{
+		p = malloc(sizeof(*p) * size);
 
 	i = 0;
 
@@ -26,6 +28,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 		return (p);
-
+	}
 	return (0);
 }
