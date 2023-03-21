@@ -5,7 +5,7 @@
  * @name: name of the struct.
  * @age: age of the struct.
  * @owner: owner of the struct.
- * Return: struct dog.
+ * Return: new dog.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -22,11 +22,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (pname = 0; name[pname]; pname++)
 	{
-		for (powner = 0; owner[powner]; powner++)
-		{
-			(*p).name = malloc(pname + 1);
-			(*p).owner = malloc(powner + 1);
-		}
+		(*p).name = malloc(pname + 1);
+	}
+	for (powner = 0; owner[powner]; powner++)
+	{
+		(*p).owner = malloc(powner + 1);
 	}
 
 	if (((*p).name == NULL) || ((*p).owner == NULL))
@@ -38,14 +38,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	for (a = 0; a < pname; a++)
+	{
 		(*p).name[a] = name[a];
+	}
 	(*p).name[a] = '\0';
-
 	(*p).age = age;
-
 	for (a = 0; a < powner; a++)
+	{
 		(*p).owner[a] = owner[a];
+	}
 	(*p).owner[a] = '\0';
-
 	return (p);
 }
