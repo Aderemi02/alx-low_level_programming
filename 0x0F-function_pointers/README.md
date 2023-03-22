@@ -1,0 +1,1 @@
+wwelcome to function pointers
