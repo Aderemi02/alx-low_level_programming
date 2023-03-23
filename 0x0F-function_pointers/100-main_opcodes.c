@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	p =(char* )main;
+	p =(char *) main;
 
 	for (a = 0; a < counts; a++)
 	{
