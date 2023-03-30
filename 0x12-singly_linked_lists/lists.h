@@ -4,7 +4,6 @@
 #include <stdio.h>
 
 typedef struct singly list_t;
-
 /**
  * struct singly - defining the datatype
  * @str: pointer to a string
@@ -20,6 +19,6 @@ struct singly
 };
 
 size_t print_list(const list_t *h);
-
+size_t list_len(const list_t *h);
 
 #endif
