@@ -9,7 +9,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int wrt, opn, stlen = 0;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
 
 	while (text_content[stlen] != '\0')
