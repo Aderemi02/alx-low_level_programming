@@ -1,9 +1,9 @@
 #include "main.h"
-int closefile(int fildes);
+int clos_fil(int fildes);
 int copy_file(const char *file_from, char *file_to);
 
 /**
- * closefile - used to close file descriptor
+ * clos_fil - used to close file descriptor
  * @fildes: used to descrine the file passed
  * Return: 0 if success
  */
