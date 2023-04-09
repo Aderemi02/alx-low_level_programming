@@ -9,7 +9,11 @@ int copy_file(const char *file_from, char *file_to);
  */
 int closefile(int fildes)
 {
-	if (fildes == -1)
+	int dess;
+
+	dess = close(dess);
+
+	if (dess == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fildes);
 		exit(100);
