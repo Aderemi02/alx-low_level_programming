@@ -11,7 +11,7 @@ int clos_fil(int fildes)
 {
 	int dess;
 
-	dess = close(dess);
+	dess = close(fildes);
 
 	if (dess == -1)
 	{
