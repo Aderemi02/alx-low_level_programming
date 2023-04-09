@@ -11,7 +11,7 @@ int closefile(int fildes)
 {
 	if (fildes == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fildes);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fildes);
 		exit(100);
 	}
 	return (0);
@@ -30,7 +30,7 @@ int copy_file(const char *file_from, char *file_to)
 	buffer = malloc(sizeof(char) * 1024);
 	if (buffer == NULL)
 	{
-		dprintf(2, "Error: Can't write to file %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", file_to);
 		exit(99);
 	}
 	opn = open(file_from, O_RDONLY);
@@ -40,13 +40,13 @@ int copy_file(const char *file_from, char *file_to)
 
 	if (opn == -1 || rd == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		free(buffer);
 		exit(98);
 	}
 	if (opn2 == -1 || wrt == -1)
 	{
-		dprintf(2, "Error: Cant write to file %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Cant write to file %s\n", file_to);
 		free(buffer);
 		exit(99);
 	}
@@ -68,7 +68,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: %s file_from file_to\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
 		exit(97);
 	}
 
