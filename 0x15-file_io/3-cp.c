@@ -7,7 +7,7 @@ int copy_file(const char *file_from, char *file_to);
  * @fildes: used to descrine the file passed
  * Return: 0 if success
  */
-int closefile(int fildes)
+int clos_fil(int fildes)
 {
 	int dess;
 
@@ -56,8 +56,8 @@ int copy_file(const char *file_from, char *file_to)
 	rd = read(opn, buffer, 1024);
 	opn2 = open(file_to, O_WRONLY | O_APPEND);
 	free(buffer);
-	closefile(opn);
-	closefile(opn2);
+	clos_fil(opn);
+	clos_fil(opn2);
 	return (0);
 }
 
