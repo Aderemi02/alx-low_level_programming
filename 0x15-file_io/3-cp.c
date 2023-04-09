@@ -58,7 +58,7 @@ int copy_file(const char *file_from, char *file_to)
 	free(buffer);
 	clos_fil(opn);
 	clos_fil(opn2);
-	return (0);
+	return (1);
 }
 
 /**
@@ -78,5 +78,6 @@ int main(int ac, char **av)
 	}
 
 	res = copy_file(av[1], av[2]);
-	return (res);
+	dprintf(1," -> %i)\n", res);
+	return (0);
 }
