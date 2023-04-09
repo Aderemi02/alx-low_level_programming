@@ -78,6 +78,5 @@ int main(int ac, char **av)
 	}
 
 	res = copy_file(av[1], av[2]);
-	dprintf(1," -> %i)\n", res);
-	return (0);
+	return (res);
 }
