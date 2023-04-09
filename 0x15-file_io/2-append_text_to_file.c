@@ -17,7 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		stlen++;
 	}
 
-	opn = open(filename, O_RDWR | O_APPEND);
+	opn = open(filename, O_WRONLY | O_APPEND);
 	wrt = write(opn, text_content, stlen);
 
 	if (opn == -1 || wrt == -1)
