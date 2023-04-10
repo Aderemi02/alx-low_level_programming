@@ -6,7 +6,7 @@
 void print_binary(unsigned long int n)
 {
 	int p, T = 0;
-	unsigned int m;
+	unsigned long int m;
 
 	for (p = 50; p >= 0; p--)
 	{
