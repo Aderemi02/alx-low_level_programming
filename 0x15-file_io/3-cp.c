@@ -27,7 +27,8 @@ int clos_fil(int fildes)
 int main(int ac, char *av[])
 {
 	char *buffer;
-	int rd, file_to, file_from, wrt;
+	int file_to, file_from, wrt;
+	ssize_t rd;
 
 	if (ac != 3)
 	{
@@ -38,20 +39,23 @@ int main(int ac, char *av[])
 
 	file_from = open(av[1], O_RDONLY);
 	file_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
-	rd = read(file_from, buffer, 1024);
 
-	if (file_from == -1 || rd == -1)
+	while (rd == 1024)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
-		free(buffer);
-		exit(98);
-	}
-	wrt = write(file_to, buffer, rd);
-	if (file_to == -1 || wrt == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		free(buffer);
-		exit(99);
+		rd = read(file_from, buffer, 1024);
+		if (file_from == -1 || rd == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+			free(buffer);
+			exit(98);
+		}
+		wrt = write(file_to, buffer, rd);
+		if (file_to == -1 || wrt == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			free(buffer);
+			exit(99);
+		}
 	}
 	free(buffer);
 	clos_fil(file_from);
