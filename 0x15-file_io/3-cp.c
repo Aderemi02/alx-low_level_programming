@@ -28,7 +28,7 @@ int main(int ac, char *av[])
 {
 	char *buffer;
 	int file_to, file_from, wrt;
-	ssize_t rd;
+	ssize_t rd = 1024;
 
 	if (ac != 3)
 	{
