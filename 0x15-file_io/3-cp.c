@@ -48,14 +48,14 @@ int main(int ac, char *av[])
 		rd = read(file_from, buffer, 1024);
 		if (file_from == -1 || rd == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			free(buffer);
 			exit(98);
 		}
 		wrt = write(file_to, buffer, rd);
 		if (file_to == -1 || wrt == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			free(buffer);
 			exit(99);
 		}
