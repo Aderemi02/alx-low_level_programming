@@ -39,27 +39,27 @@ int copy_file(const char *file_from, char *file_to)
 	}
 	opn = open(file_from, O_RDONLY);
 	rd = read(opn, buffer, 1024);
-	opn2 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if ((opn == -1 || rd == -1) && rd > 0)
+	opn2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+
+	if (opn == -1 || rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		free(buffer);
 		exit(98);
 	}
 	wrt = write(opn2, buffer, rd);
-
-	if ((opn2 == -1 || wrt == -1) && rd > 0)
+	if (opn2 == -1 || wrt == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Cant write to file %s\n", file_to);
 		free(buffer);
 		exit(99);
 	}
 	rd = read(opn, buffer, 1024);
-	opn2 = open(file_to, O_WRONLY | O_APPEND);
+	opn2 = open(file_to, O_WRONLY, 0664);
 	free(buffer);
 	clos_fil(opn);
 	clos_fil(opn2);
-	return (1);
+	return (0);
 }
 
 /**
