@@ -56,7 +56,6 @@ int main(int ac, char *av[])
 			free(buffer);
 			exit(99);
 		}
-		file_to = open(av[2], O_WRONLY, 0664);
 	}
 	free(buffer);
 	clos_fil(file_from);
