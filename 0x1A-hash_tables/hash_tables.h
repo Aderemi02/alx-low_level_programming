@@ -34,7 +34,7 @@ typedef struct hash_table_s
 } hash_table_t;
 
 
-
+void hash_table_print(const hash_table_t *ht);
 char *hash_table_get(const hash_table_t *ht, const char *key);
 hash_node_t *adding_new_hash(hash_node_t **head, const char *key, const char *value);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
