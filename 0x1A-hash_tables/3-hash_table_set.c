@@ -48,7 +48,7 @@ hash_node_t *adding_new_hash(hash_node_t **head, const char *key,
 		}
 		temp = temp->next;
 	}
-	
+
 	temp = malloc(sizeof(hash_node_t));
 
 	if (temp == NULL)
