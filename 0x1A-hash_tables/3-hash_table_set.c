@@ -38,11 +38,6 @@ hash_node_t *adding_new_hash(hash_node_t **head, const char *key,
 
 	temp = *head;
 
-	temp = malloc(sizeof(hash_node_t));
-
-	if (temp == NULL)
-		return (0);
-
 	while (temp != NULL)
 	{
 		if (strcmp(key, temp->key) == 0)
@@ -53,6 +48,12 @@ hash_node_t *adding_new_hash(hash_node_t **head, const char *key,
 		}
 		temp = temp->next;
 	}
+	
+	temp = malloc(sizeof(hash_node_t));
+
+	if (temp == NULL)
+		return (0);
+
 
 	temp->key = strdup(key);
 	temp->value = strdup(value);
