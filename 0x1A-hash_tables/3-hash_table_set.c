@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key == NULL || *key == '\0')
 		return (0);
-	
+
 	new_index = key_index((unsigned char *)key, ht->size);
 
 	if (adding_new_hash(&(ht->array[new_index]), key, value) == NULL)
@@ -31,17 +31,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @value: the value assigned to each key
  * Return: the begininning of the hash
  */
-hash_node_t *adding_new_hash(hash_node_t **head, const char *key, const char *value)
+hash_node_t *adding_new_hash(hash_node_t **head, const char *key,
+		const char *value)
 {
 	hash_node_t *temp;
 
 	temp = *head;
 
 	temp = malloc(sizeof(hash_node_t));
-	
+
 	if (temp == NULL)
 		return (0);
-	
+
 	while (temp != NULL)
 	{
 		if (strcmp(key, temp->key) == 0)
