@@ -26,11 +26,17 @@ int binary_search(int *array, size_t size, int value)
 
 		middle = (first + last) / 2;
 		if (value == array[middle])
+		{
 			return (middle);
+		}
 		else if (value > array[middle])
+		{
 			first = middle + 1;
+		}
 		else
+		{
 			last = middle - 1;
+		}
 	}
 	return (-1);
 }
